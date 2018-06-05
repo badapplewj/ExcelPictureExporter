@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ExcelPictureExporter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ExcelPictureExporter_jar</output-path>
+    <root id="archive" name="ExcelPictureExporter.jar">
+      <element id="module-output" name="ExcelPictureExporter" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jxl.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

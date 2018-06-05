@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="354.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.com.ExportController">
+    <children>
+        <Button fx:id="btChooseFile" layoutX="21.0" layoutY="73.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="36.0" prefWidth="60.0" text="选择" />
+        <Label fx:id="lbFilePath" layoutX="102.0" layoutY="73.0" prefHeight="36.0" prefWidth="489.0" style="-fx-background-color: gray;" textFill="WHITE" />
+        <Label alignment="CENTER" layoutX="21.0" layoutY="125.0" prefHeight="36.0" prefWidth="60.0" style="-fx-background-color: gray;" text="文件名" textFill="WHITE" />
+        <TextField fx:id="tfColumn1" alignment="CENTER" layoutX="202.0" layoutY="125.0" prefHeight="36.0" prefWidth="50.0" />
+        <Label alignment="CENTER" layoutX="156.0" layoutY="125.0" prefHeight="36.0" prefWidth="46.0" text="第" />
+        <Label alignment="CENTER" layoutX="252.0" layoutY="125.0" prefHeight="36.0" prefWidth="46.0" text="列" />
+        <TextField fx:id="tfColumn2" alignment="CENTER" layoutX="202.0" layoutY="167.0" prefHeight="36.0" prefWidth="50.0" />
+        <Label alignment="CENTER" layoutX="156.0" layoutY="167.0" prefHeight="36.0" prefWidth="46.0" text="第" />
+        <Label alignment="CENTER" layoutX="252.0" layoutY="167.0" prefHeight="36.0" prefWidth="46.0" text="列" />
+        <Button fx:id="btExportFile" layoutX="21.0" layoutY="226.0" mnemonicParsing="false" onAction="#exportFile" prefHeight="36.0" prefWidth="60.0" text="导出" />
+        <ProgressBar fx:id="pbDownload" layoutX="102.0" layoutY="226.0" prefHeight="36.0" prefWidth="424.0" />
+        <Button fx:id="btPreview" layoutX="305.0" layoutY="149.0" mnemonicParsing="false" onAction="#preview" prefHeight="36.0" prefWidth="60.0" text="预览" />
+        <Label fx:id="lbFileName" alignment="CENTER" layoutX="392.0" layoutY="149.0" prefHeight="36.0" prefWidth="198.0" style="-fx-background-color: gray;" textFill="WHITE" />
+        <ToggleButton fx:id="tbFileType1" layoutX="108.0" layoutY="28.0" mnemonicParsing="false" text="类型1" />
+        <ToggleButton fx:id="tbFileType2" layoutX="192.0" layoutY="28.0" mnemonicParsing="false" text="类型2" />
+        <Label fx:id="lbFinish" alignment="CENTER" layoutX="542.0" layoutY="226.0" prefHeight="36.0" prefWidth="50.0" text="完成" />
+        <Button fx:id="btStop" layoutX="21.0" layoutY="271.0" onAction="#stopExport" prefHeight="36.0" prefWidth="60.0" text="停止" />
+    </children>
+</AnchorPane>
